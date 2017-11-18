@@ -1,8 +1,6 @@
 ### Objective : Introduction to List Comprehension and Generators and Generator Expressions ###
 
 
-### Generators are functions with a 'yield' statement (Return can also be present)
-
 ###############################################################
 ############  CREATING A FUNCTION TO GENERATE LIST OF NUMS ####
 ###############################################################
