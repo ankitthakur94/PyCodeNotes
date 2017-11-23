@@ -133,14 +133,14 @@ for i in xyz_gen_exp_2 :
 
 #1. List Comprehension 
 #	1-A) List comprehension is a short way to generate list. []
-#	1-B) Code in [List Comprehension] is executed in that line itself and output if asked is stored in a list.
+#	1-B) Code in [List Comprehension] is executed in that line itself and output if asked is stored in a list. Because of this, list_comprehension is used to write one-liner for loops.
 #	1-C) Any function can be called on an iterable object in a list function syntax ( Ex : [ print (i) for i in <iterable>  ] )
 #	1-D) Nested for-looping can also be done in list comprehension. Placements of [brackets] will matter a lot. Introducing a [bracket] adds a 'append' of the list and leads to creating of nested list.
 #
 ######
 # ## 2. Generator Expression () ###
-#	2-A) Generator expression is a shory way to write a generator function code.
-#	2-B) Code in gen_exp is not executed there itself. An generator_object is retunred. It is similat to iterator, only more.
+#	2-A) Generator expression is a short way to write a generator function code.
+#	2-B) Code in gen_exp is not executed there itself. An generator_object is retunred. It is similar to iterator, only more.
 #	2-C) The returned gen_object can then be iterated on, and code inside generator expression is executed once for each iteration.
 #	2-D) Can be slower but since no data is stored in memory, it is memory efficient.
 #	2-E) Nested for-looping can also be done here. Again placement of (brackets) is important. Placing additional (brackets) will lead to returning of nested generator objects.
