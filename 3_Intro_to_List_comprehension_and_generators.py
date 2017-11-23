@@ -25,6 +25,13 @@ print ( nums_list_ )
 ## A single line format to populate a list.
 ## Use of square brackets is important []. If () are used, it becomes generator expresion.
 ##  Remember it like list is defined in [], so is list comprehension.
+
+## Syntax for a list comprehension :
+##<op_list> = [ <expression> for i in <iterable> < conditional_statements > < nested_looping> ]
+## The expression is evaluated an appended to the list.
+## < conditional statement : is evaluated and if its op is true, then only expr is evaluated.
+## <nested looping> a chain of for loops can be added.
+
 nums_list = [ i for i in range(5) ]
 print ( " Using List Comprehension " ) 
 print ( nums_list )
