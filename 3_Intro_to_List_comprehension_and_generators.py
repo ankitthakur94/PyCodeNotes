@@ -21,8 +21,10 @@ print ( nums_list_ )
 ############  CREATING A LIST COMPREHENSION ###################
 ###############################################################
 
-## Create a list comprehension
+## Using a List comprehension technique to generate a list of numbers.
+## A single line format to populate a list.
 ## Use of square brackets is important []. If () are used, it becomes generator expresion.
+##  Remember it like list is defined in [], so is list comprehension.
 nums_list = [ i for i in range(5) ]
 print ( " Using List Comprehension " ) 
 print ( nums_list )
@@ -39,6 +41,7 @@ for i in range(5):
 ###############################################################
 
 ### Define a Generator Function which will generate numbers from 0 to max.
+# Generators are functions with a 'yield' statement ( Return statement if encountered marks the end of the function)
 def NumberGenerator (max):
 	start = 0
 	while (start <= max):
@@ -47,11 +50,11 @@ def NumberGenerator (max):
 	return
 
 ### Create a number generator object.
-### Function execution will not start right now.
-### It will start when a next() function is called on generator_object.
-### Function execution pauses as it reaches yield statement and value after that is returned. When the 'next' is again called on generator object, execution continues from the line following yield statement. ( State of the  function like local vars etc. is preserved)
-### This helps us avoid saving numbers in memory.
 nums = NumberGenerator (5)
+### Function execution will not start right now.
+### It will start when a 'next()' function is called on generator_object. ( 'next' is automaticcally called by the for loop )
+### Function execution pauses as it reaches yield statement and value after that is returned. When the 'next' is again called on generator object, execution continues from the line following yield statement. ( State of the  function like local vars etc. is preserved )
+### This helps us avoid saving numbers in memory.
 
 print ( ' Printing using Generator Function ' )
 for num in nums:
