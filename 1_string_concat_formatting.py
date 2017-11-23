@@ -11,7 +11,8 @@
 #		- Quite readable.
 #
 #	2.C) Using Join
-#		'<string_to_join_with>.join( [ string1, string2, string3] )
+#		 General Syntax : <string_to_join_with>.join( <any_iterable> )		
+#		 Common Use-case Syntax : <string_to_join_with>.join( [ string1, string2, string3] )
 #		- Quite efficient, Scalable, Recommended (specially to concat 2/more stringso)
 #		- Join can be used to join any iterable with a string b.w each element.
 #
