@@ -91,7 +91,13 @@ for (i,j,k) in zip(a,b,c):
 ## CONCLUSION ##
 ############################################################
 #1. Zip can be called to zip various iterables (list/tuple/set) element-by-element.
+
+#	Syntax : 
+#		zip( <iterable1> , <iterable2> , <iterable3> .. and so on  )  < returns a zip object. ( not much useful here )
+#		for ( <obj1> , <obj2> , <obj3> .. , <obj-n> ) in zip ( <iterable1> , <iterable2>  ..  <iterablen>  ) :
+#			< Do Something > 
+
 #2. If number of elements in itrables are unequal, first minimum number of elements are zipped. Rest not taken into account.
 #3. Mixed iterables can also be zipped. 
 ############################################################
-
+///
