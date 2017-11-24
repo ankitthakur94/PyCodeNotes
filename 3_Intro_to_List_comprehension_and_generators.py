@@ -43,6 +43,29 @@ for i in range(5):
 ###############################################################
 
 
+
+###############################################################
+# Iterating over a list using a  for -loop vs list comprehension.
+###############################################################
+
+# 1.) using for -loop
+for  i in nums_list:
+	print (i)
+###  print (i) < Still prints 4
+
+# 2.) using list comprehension
+[print (i) for i in nums_list]
+###  print (i) < error
+
+# both work fine.
+# list comprehension is used to write a 1-liner for loops as above.
+# Bit the variable 'i' taken to iterate on both the cases has different lifetime
+#	IN 1. 'i' is still valid after for-loop ends and is equal to its last value in loop. (here 4)
+#	In 2. 'i' goes out of scope as soon as iteration in list comprehension ends.
+###############################################################
+
+
+
 ###############################################################
 ############  CREATING A GENERATOR FUNCTION ###################
 ###############################################################
@@ -94,7 +117,8 @@ for num in nums_generator:
 
 # List Comprehension is a short way to create a list.
 # since a list is created, use this when you need to store elements in the memory.
-
+# Iterating over an iterable  in a normal for loop : the iterating variable (generally 'i') still exists after the loop ends and value = last value in for loop.
+# Iterating over an iterable  in a list comprehension : the varible 'i' has lifetime only of that line.
 # Generator Expression is a short way to create generator function.
 # An iterable object is created on which we can iterate. 
 # Elements are not stored in memory.
