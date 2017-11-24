@@ -1,6 +1,14 @@
+#########
+#OBJECTIVE : TO explore the uses of zip() function.
+##########
+
 a = [2,4,6,8]
 b = [1,3,5,7]
 c = ['a' , 'b', 'c' , 'd']
+
+print (zip(a,b,c) )
+# returns a zip object.
+
 
 ############################################################
 ## Zips up the contents of the 3 lists element-by-element and stores them in i,j,k
