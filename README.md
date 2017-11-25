@@ -3,6 +3,7 @@
 A Repository for Self-Explanatory Python code snippets.
 Built Majorly to act as a self-reference guide.
 
+
 Some of basic - intermediate python resources based on my experience >
 
 1. Sentdex Intermediate Python ( Also has a basic python series )
@@ -29,3 +30,15 @@ http://www.apress.com/gp/book/9781430227571
 
 2. Expert Python
 https://www.packtpub.com/application-development/expert-python-programming
+
+
+
+Best way to learn a language : Practice
+  - Solve Small problems (like competitive programming / Project Euler)
+        Increases speed / Command on your language concepts / Makes you think about complexity / Keeps you in touch of various concepts.
+  - Take up a project ( Can be something you want to build : web crawler / Machine learning application / web application .. and more )
+        Gets you deeper into concepts
+        Boosts your project handling capabilities
+  - Read others code
+        Opens up your mind to other ways to approach a problem.
+        
