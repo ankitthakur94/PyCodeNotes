@@ -57,15 +57,24 @@ formatter = logging.Formatter('%(asctime)s :%(levelname)s : %(message)s')
 file_handler.setFormatter(formatter)
 
 
+# If we want to also print on the console (as well as print in the file as above) 
+# we can just create a stream handler and add it to logger
+
+stream_handler = logging.StreamHandler ()
+logger_1.addHandler (stream_handler)
+
+# Also we can set the same / different format for stream handler.
+stream_handler.setFormatter (formatter)
+
+
+# The outputs of the below statements will be printed in a file as well as output stream
+
+
 logger_1.debug ( ' How is the day today ' )
 logger_1.info (' Today can be a good day ' )
 logger_1.warning ( ' Only if you do not screw over ' )
 logger_1.error ( ' Stop believing others ' )
 logger_1.critical ( ' Damn you bro ! I told you to believe yourself . You are now doomed ' )
-
-
-
-
 
 
 
