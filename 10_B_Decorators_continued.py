@@ -97,4 +97,10 @@ print ( ' Average : ' , avg )
 # In a decorator function, we return a wrapper function.
 # The function which has been decorated with this decorator, when that funcion will be called, internally actually the returned wrapper will be called.
 # So the interface (arguments and return value) of wrapper should be exactly same as the original function to be decorated.
+
+# Also another use of decorators is if we want to change the interface of a function. 
+# 	Say a function was accepting 3 arguments and adding sum.
+#	Using a decorator (which accepts this function as arguemnt), we can return a function (wrapper) which takes 2 / 4 .. or any number of arguments.
+# 	That way we can also change the interface of a particular function using decorators.
+#	A use case for this is when declaring a class-method (static function). A decorator is placed on top of a method, which eliminates 'self' as first argument, instead puts class name as first argument.
 #####################################################
