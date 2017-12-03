@@ -58,7 +58,7 @@ Organization_2.display_info (org1)		# Same as org1.display_info ()
 # While calling a member function of a class via a class instance variable, implicitly the instance varible is passed as the first argument to the function.
 # So every class's function's first argument should be 'self' 
 # However 'self' is just a convention, we can choose any name instead of self.
-
+# No notion of private and public in python. Public is default.
 ###########################################
 
 

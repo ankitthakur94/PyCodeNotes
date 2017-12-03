@@ -5,15 +5,16 @@
 ############  CREATING A FUNCTION TO GENERATE LIST OF NUMS ####
 ###############################################################
 
-def GetListOfNums (max):
-	nums_list = []
-	for i in range(max):
-		nums_list.append(i)
-	return nums_list
+def GetListOfNums(max):
+    nums_list = []
+    for i in range(max):
+        nums_list.append(i)
+    return nums_list
 
-nums_list_ = GetListOfNums (5)
-print ( " Printing List of nums " ) 
-print ( nums_list_ ) 
+
+nums_list_ = GetListOfNums(5)
+print(" Printing List of nums ")
+print(nums_list_)
 ###############################################################
 
 
@@ -27,21 +28,20 @@ print ( nums_list_ )
 ##  Remember it like list is defined in [], so is list comprehension.
 
 ## Syntax for a list comprehension :
-##<op_list> = [ <expression> for i in <iterable> < conditional_statements > < nested_looping> ]
+## <op_list> = [ <expression> for i in <iterable> < conditional_statements > < nested_looping> ]
 ## The expression is evaluated an appended to the list.
 ## < conditional statement : is evaluated and if its op is true, then only expr is evaluated.
 ## <nested looping> a chain of for loops can be added.
 
-nums_list = [ i for i in range(5) ]
-print ( " Using List Comprehension " ) 
-print ( nums_list )
+nums_list = [i for i in range(5)]
+print(" Using List Comprehension ")
+print(nums_list)
 
 # The statement is a list comprehension and is equivalent to :
 nums_list = []
 for i in range(5):
-	nums_list.append(i)
+    nums_list.append(i)
 ###############################################################
-
 
 
 ###############################################################
@@ -49,12 +49,14 @@ for i in range(5):
 ###############################################################
 
 # 1.) using for -loop
-for  i in nums_list:
-	print (i)
+for i in nums_list:
+    print(i)
 ###  print (i) < Still prints 4
 
 # 2.) using list comprehension
-[print (i) for i in nums_list]
+[print(i) for i in nums_list]
+
+
 ###  print (i) < error
 
 # both work fine.
@@ -65,34 +67,31 @@ for  i in nums_list:
 ###############################################################
 
 
-
 ###############################################################
 ############  CREATING A GENERATOR FUNCTION ###################
 ###############################################################
 
 ### Define a Generator Function which will generate numbers from 0 to max.
 # Generators are functions with a 'yield' statement ( Return statement if encountered marks the end of the function)
-def NumberGenerator (max):
-	start = 0
-	while (start <= max):
-		yield start
-		start += 1
-	return
+def NumberGenerator(max):
+    start = 0
+    while (start <= max):
+        yield start
+        start += 1
+    return
+
 
 ### Create a number generator object.
-nums = NumberGenerator (5)
+nums = NumberGenerator(5)
 ### Function execution will not start right now.
 ### It will start when a 'next()' function is called on generator_object. ( 'next' is automaticcally called by the for loop )
 ### Function execution pauses as it reaches yield statement and value after that is returned. When the 'next' is again called on generator object, execution continues from the line following yield statement. ( State of the  function like local vars etc. is preserved )
 ### This helps us avoid saving numbers in memory.
 
-print ( ' Printing using Generator Function ' )
+print(' Printing using Generator Function ')
 for num in nums:
-	print ( num ) 
+    print(num)
 ###############################################################
-
-
-
 
 ###############################################################
 ############  CREATING A GENERATOR EXPRESSION  ################
@@ -102,13 +101,12 @@ for num in nums:
 
 ## Create a generator expression object.
 ## Now we can iterate on this object
-nums_generator = ( i for i in range(5))
+nums_generator = (i for i in range(5))
 
-print ( " Printing using Generator expression object " ) 
+print(" Printing using Generator expression object ")
 for num in nums_generator:
-	print (num)
+    print(num)
 ###############################################################
-
 
 
 ########################################
